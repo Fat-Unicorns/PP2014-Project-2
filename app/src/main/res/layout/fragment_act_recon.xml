@@ -1,0 +1,13 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fat_unicorns.pp2014_project_2.ActReconFragment">
+
+    <TextView
+        android:id="@+id/activity_display_text"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:text="@string/hello_blank_fragment" />
+
+</FrameLayout>
