@@ -29,6 +29,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity implements ConnectionCallbacks,OnConnectionFailedListener, GooglePlayServicesClient.ConnectionCallbacks {
 
@@ -138,11 +139,10 @@ public class MapsActivity extends FragmentActivity implements ConnectionCallback
                 LatLng pos = new LatLng(location.getLatitude(),location.getLongitude());
                 if(mMap != null){
 
-                    /* Add a marker to the user's location every time it changes
                     me = mMap.addMarker(new MarkerOptions()
                             .position(pos)
                             .title("Here I am!"));
-                    */
+
 
                     CameraPosition cameraPosition = new CameraPosition.Builder()
                             .target(pos)      	        // Sets the center of the map to the user's location
