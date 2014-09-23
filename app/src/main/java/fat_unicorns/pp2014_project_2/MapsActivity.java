@@ -139,10 +139,11 @@ public class MapsActivity extends FragmentActivity implements ConnectionCallback
                 LatLng pos = new LatLng(location.getLatitude(),location.getLongitude());
                 if(mMap != null){
 
+                    /*
                     me = mMap.addMarker(new MarkerOptions()
                             .position(pos)
                             .title("Here I am!"));
-
+                    */
 
                     CameraPosition cameraPosition = new CameraPosition.Builder()
                             .target(pos)      	        // Sets the center of the map to the user's location
